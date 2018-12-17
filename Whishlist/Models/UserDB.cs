@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 
-namespace Whishlist.Models
+namespace Wishlist.Models
 {
     public class UserDB : DbContext
     {

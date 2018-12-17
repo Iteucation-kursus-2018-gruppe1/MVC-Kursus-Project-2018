@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace Whishlist.Models
+namespace Wishlist.Models
 {
     public class Wish
     {
@@ -20,6 +20,5 @@ namespace Whishlist.Models
 
         [Required]
         public bool Status { get; set; }
-
     }
 }

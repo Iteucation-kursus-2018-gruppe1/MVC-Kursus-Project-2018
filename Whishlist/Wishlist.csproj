@@ -101,18 +101,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\WishesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserDB.cs" />
+    <Compile Include="Models\UserInitializer.cs" />
     <Compile Include="Models\Wish.cs" />
     <Compile Include="Models\WishDB.cs" />
+    <Compile Include="Models\WishInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
+    <Content Include="Views\Wishes\Create.cshtml" />
+    <Content Include="Views\Wishes\Delete.cshtml" />
+    <Content Include="Views\Wishes\Details.cshtml" />
+    <Content Include="Views\Wishes\Edit.cshtml" />
+    <Content Include="Views\Wishes\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -122,7 +130,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
