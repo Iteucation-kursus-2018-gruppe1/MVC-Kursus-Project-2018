@@ -14,6 +14,7 @@ namespace Wishlist
         protected void Application_Start()
         {
             Database.SetInitializer<WishDB>(new WishInitializer());
+            Database.SetInitializer<UserDB>(new UserInitializer());
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
